@@ -8,7 +8,7 @@ app = Flask(__name__)
 def hello_world():
     if request.method == "POST":
         print(request.form['name'])
-        data = 'Hi, ' + request.form['name']
+        data = 'Hello, ' + request.form['name']
         return render_template('home.html', data=data)
     else:
         data = 'Hello, World!'
